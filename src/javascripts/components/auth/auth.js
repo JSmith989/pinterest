@@ -31,7 +31,8 @@ const loginButton = () => {
         <i class="fab fa-google"></i></i>oogle Login
         </button>
     
-</nav>`;
+</nav>
+<h1>PINTEREST</h1>`;
 
   $('#app').html(domString);
   $('#google-auth').on('click', signMeIn);
