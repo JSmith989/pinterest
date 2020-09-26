@@ -1,8 +1,11 @@
 @import "~bootstrap/scss/bootstrap";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import './components';
+@import './globals/';
 
 body {
   background-color: rgb(43, 53, 87);
+  background-image: $texture;
   color: brown;
   text-align: center;
   margin-top: 100px;
