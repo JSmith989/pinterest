@@ -24,10 +24,10 @@ const myNavbar = (user) => {
   
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-    <li class="nav-item mx-3"  id="farmers-link">
+    <li class="nav-item mx-3"  id="board-return">
       <a class="nav-link" href="#"><i class="fas fa-chalkboard"></i> Boards</a>
     </li>
-    <li class="nav-item mx-3" id="add-cow-link">
+    <li class="nav-item mx-3" id="add-pin-link">
       <a class="nav-link" href="#"><i class="fas fa-plus-circle"></i> Add A Pin</a>
     </li>
   </ul>
