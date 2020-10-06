@@ -1,0 +1,38 @@
+{
+    "pin1": {
+        "boardId": "board1",
+        "image": "https://s3.amazonaws.com/beautifulnow_production/uploads/ckeditor_assets/pictures/15268/content_c1-Image-Courtesy-of-Sands-Hollow-Resort.-Sands-Hollow-Resort.-Hurricane_-Utah..jpg",
+        "uid": "",
+        "pinId": "pin1"
+    },
+    "pin2": {
+        "boardId": "board1",
+        "image": "https://coloradoavidgolfer.com/wp-content/uploads/2020/01/Coyote_Springs_Sun.jpg",
+        "uid": "",
+        "pinId": "pin2"
+    },
+    "pin3": {
+        "boardId": "board2",
+        "image": "https://media-cdn.tripadvisor.com/media/photo-s/12/2a/3a/ae/diamond-martini-1.jpg",
+        "uid": "",
+        "pinId": "pin3"
+    },
+    "pin4": {
+        "boardId": "board2",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQFmIWaIBEzC8ZyGcDAAfSFA8MuHwSs2fc-8Q&usqp=CAU",
+        "uid": "",
+        "pinId": "pin4"
+    },
+    "pin5": {
+        "boardId": "board3",
+        "image": "https://pipesmagazine.com/wp-content/2016/the-pipe-pundit/02/pipe-tobacco-pouch.jpg",
+        "uid": "",
+        "pinId": "pin5"
+    },
+    "pin6": {
+        "boardId": "board3",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/81mIMfOhHLL._SX1000_.jpg",
+        "uid": "",
+        "pinId": "pin6"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "board1": {
+        "name": "Golf Courses",
+        "image": "Golf Course Image",
+        "uid": ""
+    },
+    "board2": {
+        "name": "Cocktails",
+        "image": "Cocktail Image",
+        "uid": ""
+    },
+    "board3": {
+        "name": "Pipes",
+        "image": "Pipe Image",
+        "uid": ""
+    }
+}
