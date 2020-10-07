@@ -4,9 +4,6 @@ import 'firebase/auth';
 const logoutEvent = () => {
   $('#navbar-logout-button').on('click', (e) => {
     e.preventDefault();
-
-    // NOTE FOR STUDENTS
-    // Remove session storage if they log out in the same session and in case another user logs in, we want the API check to happen.
     window.sessionStorage.removeItem('ua');
     firebase.auth().signOut();
     window.location.href = '/';

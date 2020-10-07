@@ -1,0 +1,17 @@
+{
+    "board1": {
+        "name": "Golf Courses",
+        "image": "https://s3.amazonaws.com/beautifulnow_production/uploads/ckeditor_assets/pictures/15268/content_c1-Image-Courtesy-of-Sands-Hollow-Resort.-Sands-Hollow-Resort.-Hurricane_-Utah..jpg",
+        "uid": "sdfgdshdfghh"
+    },
+    "board2": {
+        "name": "Cocktails",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQFmIWaIBEzC8ZyGcDAAfSFA8MuHwSs2fc-8Q&usqp=CAU",
+        "uid": "gsdjkukukkhkg"
+    },
+    "board3": {
+        "name": "Pipes",
+        "image": "https://pipesmagazine.com/wp-content/2016/the-pipe-pundit/02/pipe-tobacco-pouch.jpg",
+        "uid": "ertetryrtyutyi"
+    }
+}
