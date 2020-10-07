@@ -4,9 +4,17 @@
 @import './globals/';
 
 body {
-  background-color: rgb(43, 53, 87);
+  background-color: rgb(46, 51, 92);
   background-image: $texture;
-  color: brown;
   text-align: center;
   margin-top: 100px;
+}
+
+.board {
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  margin-top: 50px;
+  width: 90%;
 }
