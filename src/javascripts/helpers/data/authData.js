@@ -1,6 +1,6 @@
 import firebase from 'firebase/app';
 import 'firebase/auth';
-// import userData from './userData';
+import userData from './userData';
 import auth from '../../components/auth/auth';
 import myNavbar from '../../components/myNavbar/myNavbar';
 import viewHelper from '../viewHelpers';
@@ -8,8 +8,8 @@ import viewHelper from '../viewHelpers';
 const checkLoginStatus = () => {
   firebase.auth().onAuthStateChanged((user) => {
     if (user) {
-      // const currentUser = userData.setCurrentFarmer(user);
-      myNavbar.myNavbar(user);
+      const currentUser = userData.setCurrentUser(user);
+      myNavbar.myNavbar(currentUser);
       viewHelper.viewListener('board-link');
     } else {
       auth.loginButton();
