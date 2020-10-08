@@ -5,17 +5,17 @@ const baseUrl = apiKeys.firebaseKeys.databaseURL;
 
 const getBoards = () => new Promise((resolve, reject) => {
   axios.get(`${baseUrl}/boards.json`).then((response) => {
-    const demFarmers = response.data;
-    const farmers = [];
-    if (demFarmers) {
-      Object.keys(demFarmers).forEach((farmerId) => {
-        farmers.push(demFarmers[farmerId]);
+    const theBoards = response.data;
+    const boards = [];
+    if (theBoards) {
+      Object.keys(theBoards).forEach((boardId) => {
+        boards.push(theBoards[boardId]);
       });
     }
-    resolve(farmers);
+    resolve(boards);
   }).catch((error) => reject(error));
 });
 
-const deleteBoard = (firebaseKey, number) => axios.delete(`${baseUrl}/boards/${firebaseKey}${number}.json`);
+const deleteBoard = (firebaseKey) => axios.delete(`${baseUrl}/boards/${firebaseKey}.json`);
 
 export default { getBoards, deleteBoard };
