@@ -14,6 +14,7 @@ const pinMaker = (pinObject) => {
     const firebaseKey = e.currentTarget.id;
     $(`.card#${firebaseKey}`).remove();
     pinData.deletePin(firebaseKey);
+    console.warn(firebaseKey);
   });
 
   return domString;
