@@ -16,4 +16,6 @@ const getPins = () => new Promise((resolve, reject) => {
   }).catch((error) => reject(error));
 });
 
-export default { getPins };
+const deletePin = (firebaseKey) => axios.delete(`${baseUrl}/pins/${firebaseKey}.json`);
+
+export default { getPins, deletePin };
