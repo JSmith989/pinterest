@@ -16,6 +16,8 @@ const getBoards = () => new Promise((resolve, reject) => {
   }).catch((error) => reject(error));
 });
 
-const deleteBoard = (firebaseKey) => axios.delete(`${baseUrl}/boards/${firebaseKey}.json`);
+// const deleteBoard = (boardId) => {
+// //   console.warn(boardId);
+// };
 
-export default { getBoards, deleteBoard };
+export default { getBoards };

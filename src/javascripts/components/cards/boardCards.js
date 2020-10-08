@@ -10,7 +10,7 @@ const boardMaker = (boardObject) => {
                       </div>
                     </div>`;
 
-  $('body').on('click', '.delete-board', (e) => {
+  $('body').on('click', '.card.board .btn.delete-board', (e) => {
     e.stopImmediatePropagation();
     $(`.card#${e.currentTarget.id}`).remove();
     boardData.deleteBoard(e.currentTarget.id);

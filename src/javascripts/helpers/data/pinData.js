@@ -18,4 +18,10 @@ const getPins = () => new Promise((resolve, reject) => {
 
 const deletePin = (firebaseKey) => axios.delete(`${baseUrl}/pins/${firebaseKey}.json`);
 
-export default { getPins, deletePin };
+const addPin = (data) => axios.post(`${baseUrl}/pins.json`, data)
+  .then((response) => {
+    const update = { firebaseKey: response.data.name };
+    axios.patch(`${baseUrl}/pins/${response.data.name}.json`, update);
+  }).catch((error) => console.warn(error));
+
+export default { getPins, deletePin, addPin };

@@ -6,6 +6,7 @@
 body {
   background-color: rgb(46, 51, 92);
   background-image: $texture;
+  color: black;
   text-align: center;
   margin-top: 100px;
 }
@@ -26,4 +27,8 @@ body {
   flex-flow: row wrap;
   margin-top: 50px;
   width: 90%;
+}
+
+#pin-form {
+  color: white;
 }

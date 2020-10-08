@@ -1,5 +1,6 @@
 import boardView from '../components/views/boardView';
 import pinsView from '../components/views/pinsView';
+import addPinview from '../components/views/addPinView';
 
 const viewHelper = (id) => {
   $('#app').html('');
@@ -11,6 +12,8 @@ const viewHelper = (id) => {
       return boardView.boardView();
     case 'pin-return':
       return pinsView.pinsView();
+    case 'add-pin-link':
+      return addPinview.addPinView();
     default:
       return console.warn('nothing clicked');
   }
