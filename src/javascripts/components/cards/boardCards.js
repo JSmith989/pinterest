@@ -1,4 +1,12 @@
 import boardData from '../../helpers/data/boardData';
+// import pinData from '../../helpers/data/pinData';
+
+// const allDaPins = () => {
+//   $('body').on('click', '.see-pins', (e) => {
+//     e.stopImmediatePropagation();
+
+//   });
+// };
 
 const boardMaker = (boardObject) => {
   const domString = `<div class="card board" style="width: 22rem;" id=${boardObject.boardUid}>

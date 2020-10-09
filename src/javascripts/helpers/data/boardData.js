@@ -17,6 +17,15 @@ const getBoards = () => new Promise((resolve, reject) => {
   }).catch((error) => reject(error));
 });
 
+const getSingleBoard = (boardUid) => new Promise((resolve, reject) => {
+  axios.get(`${baseUrl}/boards.json?orderBy="boardUid"&equalTo="${boardUid}"`)
+    .then((response) => {
+      const board = Object.values(response.data);
+      const thisBoard = board[0];
+      resolve(thisBoard);
+    }).catch((error) => reject(error));
+});
+
 const deleteBoard = (boardUid) => {
   pinData.getBoardsPins(boardUid)
     .then((response) => {
@@ -25,10 +34,11 @@ const deleteBoard = (boardUid) => {
       });
     })
     .then(() => {
-      pinData.getSingleBoard(boardUid)
+      getSingleBoard(boardUid)
         .then((response) => {
           axios.delete(`${baseUrl}/boards/${response.firebaseKey}.json`);
         });
+      console.warn(`${boardUid}`);
     });
 };
 

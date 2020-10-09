@@ -38,7 +38,7 @@ const getBoardsPins = (boardUid) => new Promise((resolve, reject) => {
     }).catch((error) => reject(error));
 });
 
-const getSingleBoard = (pinFirebaseKey) => new Promise((resolve, reject) => {
+const getSinglePin = (pinFirebaseKey) => new Promise((resolve, reject) => {
   axios.get(`${baseUrl}/pins/${pinFirebaseKey}.json`).then((response) => {
     const thisPin = response.data;
     resolve(thisPin);
@@ -50,5 +50,5 @@ export default {
   deletePin,
   addPin,
   getBoardsPins,
-  getSingleBoard
+  getSinglePin
 };
