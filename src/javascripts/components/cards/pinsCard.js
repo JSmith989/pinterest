@@ -2,11 +2,11 @@ import pinData from '../../helpers/data/pinData';
 
 const pinMaker = (pinObject) => {
   const domString = `<div class="card pin" style="width: 30rem;" 
-  id=${pinObject.pinId}>
+  id=${pinObject.firebaseKey}>
                         <img class="card-img-top" src="${pinObject.image}" alt="Card image cap">
                         <div class="card-body">
                           
-                          <a href="#" id="${pinObject.pinId}" class="btn btn-danger delete-pin">Delete Pin</a>
+                          <a href="#" id="${pinObject.firebaseKey}" class="btn btn-danger delete-pin">Delete Pin</a>
                         </div>
                       </div>`;
   $('body').on('click', '.delete-pin', (e) => {

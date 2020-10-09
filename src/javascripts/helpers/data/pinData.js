@@ -24,4 +24,31 @@ const addPin = (data) => axios.post(`${baseUrl}/pins.json`, data)
     axios.patch(`${baseUrl}/pins/${response.data.name}.json`, update);
   }).catch((error) => console.warn(error));
 
-export default { getPins, deletePin, addPin };
+const getBoardsPins = (boardUid) => new Promise((resolve, reject) => {
+  axios.get(`${baseUrl}/pins.json?orderBy="boardUid"&equalTo="${boardUid}"`)
+    .then((response) => {
+      const boardsPins = response.data;
+      const pins = [];
+      if (boardsPins) {
+        Object.keys(boardsPins).forEach((pinId) => {
+          pins.push(boardsPins[pinId]);
+        });
+      }
+      resolve(pins);
+    }).catch((error) => reject(error));
+});
+
+const getSingleBoard = (pinFirebaseKey) => new Promise((resolve, reject) => {
+  axios.get(`${baseUrl}/pins/${pinFirebaseKey}.json`).then((response) => {
+    const thisPin = response.data;
+    resolve(thisPin);
+  }).catch((error) => reject(error));
+});
+
+export default {
+  getPins,
+  deletePin,
+  addPin,
+  getBoardsPins,
+  getSingleBoard
+};

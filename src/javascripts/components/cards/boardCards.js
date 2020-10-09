@@ -1,12 +1,12 @@
 import boardData from '../../helpers/data/boardData';
 
 const boardMaker = (boardObject) => {
-  const domString = `<div class="card board" style="width: 22rem;" id=${boardObject.bId}>
+  const domString = `<div class="card board" style="width: 22rem;" id=${boardObject.boardUid}>
                       <img class="card-img-top" src="${boardObject.image}" alt="Card image cap">
                       <div class="card-body">
                         <h5 class="card-title">${boardObject.name}</h5>
-                        <a href="#" class="btn btn-primary see-pins" id=${boardObject.bId}>View Pins</a>
-                        <a href="#" id="${boardObject.bId}" class="btn btn-danger delete-board">Delete Board</a>
+                        <a href="#" class="btn btn-primary see-pins" id=${boardObject.boardUid}>View Pins</a>
+                        <a href="#" id="${boardObject.boardUid}" class="btn btn-danger delete-board">Delete Board</a>
                       </div>
                     </div>`;
 

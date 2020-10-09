@@ -12,7 +12,7 @@ const pinForm = () => {
         <input type="text" class="form-control" id="name" placeholder="Example: St. Andrews Golf Course">
       </div>
       <div class="form-group">
-        <label for="image">Image</label>
+        <label for="imageURL">Image</label>
         <input type="text" class="form-control" id="imageURL" placeholder="Example: Photo URL">
       </div>
       <div class="form-group">
@@ -27,7 +27,7 @@ const pinForm = () => {
 
   boardData.getBoards().then((response) => {
     response.forEach((item) => {
-      $('select').append(`<option value="${item.uid}">${item.name}</option>`);
+      $('select').append(`<option value="${item.boardUid}">${item.name}</option>`);
     });
   });
 
@@ -37,7 +37,7 @@ const pinForm = () => {
     const data = {
       name: $('#name').val() || false,
       image: $('#imageURL').val() || false,
-      boardId: $('#yourBoard').val() || false
+      boardUid: $('#yourBoard').val() || false
     };
 
     if (Object.values(data).includes(false)) {

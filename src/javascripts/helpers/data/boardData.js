@@ -1,5 +1,6 @@
 import axios from 'axios';
 import apiKeys from '../apiKeys.json';
+import pinData from './pinData';
 
 const baseUrl = apiKeys.firebaseKeys.databaseURL;
 
@@ -16,8 +17,19 @@ const getBoards = () => new Promise((resolve, reject) => {
   }).catch((error) => reject(error));
 });
 
-// const deleteBoard = (boardId) => {
-// //   console.warn(boardId);
-// };
+const deleteBoard = (boardUid) => {
+  pinData.getBoardsPins(boardUid)
+    .then((response) => {
+      response.forEach((item) => {
+        pinData.deletePin(item.firebaseKey);
+      });
+    })
+    .then(() => {
+      pinData.getSingleBoard(boardUid)
+        .then((response) => {
+          axios.delete(`${baseUrl}/boards/${response.firebaseKey}.json`);
+        });
+    });
+};
 
-export default { getBoards };
+export default { getBoards, deleteBoard };
