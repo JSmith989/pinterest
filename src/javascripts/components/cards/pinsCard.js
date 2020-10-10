@@ -5,7 +5,7 @@ const pinMaker = (pinObject) => {
   id=${pinObject.firebaseKey}>
                         <img class="card-img-top" src="${pinObject.image}" alt="Card image cap">
                         <div class="card-body">
-                          
+                        <h5 class="card-title">${pinObject.name}</h5>
                           <a href="#" id="${pinObject.firebaseKey}" class="btn btn-danger delete-pin">Delete Pin</a>
                         </div>
                       </div>`;

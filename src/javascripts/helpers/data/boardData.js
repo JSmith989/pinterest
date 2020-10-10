@@ -41,4 +41,11 @@ const deleteBoard = (boardUid) => {
     });
 };
 
-export default { getBoards, deleteBoard };
+const addBoard = (data) => axios.post(`${baseUrl}/boards.json`, data).then((response) => {
+  const update = { firebaseKey: response.data.name };
+  axios
+    .patch(`${baseUrl}/boards/${response.data.name}.json`, update)
+    .catch((error) => console.warn(error));
+});
+
+export default { getBoards, deleteBoard, addBoard };
