@@ -4,6 +4,8 @@
 
 ![image](https://imgur.com/oSziOSC.gif)
 
+[url=https://imgur.com/oSziOSC][img]http://i.imgur.com/oSziOSC.mp4[/img][/url]
+
 
 ### About Project
 The purpose of this project was to learn how to create a CRUD app. Honestly, I ran into quite a few problems with this project but I pushed through and in the end I learned way more about development than I thought possible.
