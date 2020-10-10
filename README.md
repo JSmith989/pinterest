@@ -2,6 +2,8 @@
 
 [See Live Demo](https://pinterest-3deb6.web.app/)
 
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/4eOEOeY" data-context="false" ><a href="//imgur.com/a/4eOEOeY"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+
 
 ### About Project
 The purpose of this project was to learn how to create a CRUD app. Honestly, I ran into quite a few problems with this project but I pushed through and in the end I learned way more about development than I thought possible.
