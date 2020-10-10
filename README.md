@@ -8,7 +8,7 @@ The purpose of this project was to learn how to create a CRUD app. Honestly, I r
 
 
 ### Requirements
- Clean code - single responsibility principle
+* Clean code - single responsibility principle
 * ES6 Modules bundled with webpack
 * No errors - linters should be clean
 * Jquery for any DOM manipulation (selectors, modifying css classes, events)
