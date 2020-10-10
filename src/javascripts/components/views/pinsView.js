@@ -12,7 +12,6 @@ import cards from '../cards/pinsCard';
 const pinsView = () => {
   mergedData.getDataForPinsView()
     .then((response) => {
-      console.warn(response);
       if (response.length) {
         response.forEach((pin) => {
           $('#app').append(cards.pinMaker(pin));
