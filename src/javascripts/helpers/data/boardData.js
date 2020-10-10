@@ -48,4 +48,6 @@ const addBoard = (data) => axios.post(`${baseUrl}/boards.json`, data).then((resp
     .catch((error) => console.warn(error));
 });
 
-export default { getBoards, deleteBoard, addBoard };
+export default {
+  getBoards, deleteBoard, addBoard, getSingleBoard
+};

@@ -2,8 +2,9 @@ import boardView from '../components/views/boardView';
 import pinsView from '../components/views/pinsView';
 import addPinview from '../components/views/addPinView';
 import addBoardView from '../components/views/addBoardView';
+import singleBoardView from '../components/views/singleBoardView';
 
-const viewHelper = (id) => {
+const viewHelper = (id, arg) => {
   $('#app').html('');
 
   switch (id) {
@@ -17,6 +18,8 @@ const viewHelper = (id) => {
       return addPinview.addPinView();
     case 'add-board-link':
       return addBoardView.addBoardView();
+    case 'single-board':
+      return singleBoardView.singleBoardView(arg);
     default:
       return console.warn('nothing clicked');
   }
@@ -30,7 +33,7 @@ const viewListener = (view) => {
   });
   $('body').on('click', '.card.board .see-pins', (e) => {
     const boardUid = e.currentTarget.id;
-    viewHelper('single-farmer', boardUid);
+    viewHelper('single-board', boardUid);
   });
 };
 
