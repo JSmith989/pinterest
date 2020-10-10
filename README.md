@@ -2,7 +2,7 @@
 
 [See Live Demo](https://pinterest-3deb6.web.app/)
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/4eOEOeY" data-context="false" ><a href="//imgur.com/a/4eOEOeY"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+![image](https://imgur.com/oSziOSC.gif)
 
 
 ### About Project
