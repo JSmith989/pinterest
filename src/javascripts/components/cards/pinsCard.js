@@ -6,6 +6,7 @@ const pinMaker = (pinObject) => {
                         <img class="card-img-top" src="${pinObject.image}" alt="Card image cap">
                         <div class="card-body">
                         <h5 class="card-title">${pinObject.name}</h5>
+                        <a href="#" id="${pinObject.firebaseKey}" class="btn btn-info update-pin"><i class="far fa-edit"></i> Update Pin</a>
                           <a href="#" id="${pinObject.firebaseKey}" class="btn btn-danger delete-pin">Delete Pin</a>
                         </div>
                       </div>`;
@@ -14,7 +15,6 @@ const pinMaker = (pinObject) => {
     const firebaseKey = e.currentTarget.id;
     $(`.card#${firebaseKey}`).remove();
     pinData.deletePin(firebaseKey);
-    console.warn(firebaseKey);
   });
 
   return domString;

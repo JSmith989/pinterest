@@ -3,36 +3,36 @@
         "boardUid": "sdfgdshdfghh",
         "image": "https://s3.amazonaws.com/beautifulnow_production/uploads/ckeditor_assets/pictures/15268/content_c1-Image-Courtesy-of-Sands-Hollow-Resort.-Sands-Hollow-Resort.-Hurricane_-Utah..jpg",
         "firebaseKey": "pin1",
-        "pinId": "pin1"
+        "name": "Utah Golf Course"
     },
     "pin2": {
         "boardUid": "sdfgdshdfghh",
         "image": "https://coloradoavidgolfer.com/wp-content/uploads/2020/01/Coyote_Springs_Sun.jpg",
         "firebaseKey": "pin2",
-        "pinId": "pin2"
+        "name": "Coyote Springs"
     },
     "pin3": {
         "boardUid": "gsdjkukukkhkg",
         "image": "https://media-cdn.tripadvisor.com/media/photo-s/12/2a/3a/ae/diamond-martini-1.jpg",
         "firebaseKey": "pin3",
-        "pinId": "pin3"
+        "name": "Diamond Martini"
     },
     "pin4": {
         "boardUid": "gsdjkukukkhkg",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQFmIWaIBEzC8ZyGcDAAfSFA8MuHwSs2fc-8Q&usqp=CAU",
         "firebaseKey": "pin4",
-        "pinId": "pin4"
+        "name": "Winter Vibes"
     },
     "pin5": {
         "boardUid": "ertetryrtyutyi",
         "image": "https://pipesmagazine.com/wp-content/2016/the-pipe-pundit/02/pipe-tobacco-pouch.jpg",
         "firebaseKey": "pin5",
-        "pinId": "pin5"
+        "name": "The Traditional"
     },
     "pin6": {
         "boardUid": "ertetryrtyutyi",
         "image": "https://images-na.ssl-images-amazon.com/images/I/81mIMfOhHLL._SX1000_.jpg",
         "firebaseKey": "pin6",
-        "pinId": "pin6"
+        "name": "Wood Burned Traditional"
     }
 }
