@@ -3,7 +3,6 @@
 [See Live Demo](https://pinterest-3deb6.web.app/)
 
 ![image](https://imgur.com/oSziOSC.gif)
-<img src="https://i.imgur.com/oSziOSC.mp4" title="source: imgur.com" />
 
 
 ### About Project
